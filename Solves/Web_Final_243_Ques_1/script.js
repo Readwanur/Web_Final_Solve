@@ -22,8 +22,9 @@ function guessTheNumber() {
       document.getElementById("input").value = "";
       return;
     }
-  } else if (attempt > 5) {
+  } else{
     document.getElementById("feedBack").innerHTML =
+    
       "Out of guesses!" + "<br>" + "The secret number is " + randomNumber;
     document.getElementById("input").disabled = true;
     document.getElementById("input").value = "";
